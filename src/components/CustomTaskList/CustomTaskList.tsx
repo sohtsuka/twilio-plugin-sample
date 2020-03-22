@@ -18,7 +18,7 @@ const CustomTaskList = (props: Props) => {
 
   return (
     <CustomTaskListComponentStyles>
-      This is a dismissible demo component
+      This is a dismissible demo component (identity: {props.identity})
       <i className="accented" onClick={props.dismissBar}>
         close
       </i>

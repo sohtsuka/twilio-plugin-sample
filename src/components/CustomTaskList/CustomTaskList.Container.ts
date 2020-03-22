@@ -7,6 +7,7 @@ import CustomTaskList from './CustomTaskList';
 
 export interface StateToProps {
   isOpen: boolean;
+  identity: string;
 }
 
 export interface DispatchToProps {
@@ -15,6 +16,7 @@ export interface DispatchToProps {
 
 const mapStateToProps = (state: AppState): StateToProps => ({
   isOpen: state['sample'].customTaskList.isOpen,
+  identity: state['flex'].session.identity,
 });
 
 const mapDispatchToProps = (dispatch: Dispatch<any>): DispatchToProps => ({
